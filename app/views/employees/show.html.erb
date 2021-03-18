@@ -1,0 +1,9 @@
+<h1><%= @employee.first_name + ' ' + @employee.last_name%></h1>
+<h3>Title: <%= @employee.title %></h3>
+<h3>Nickname: <%= @employee.alias %></h3>
+<h3>Location: <%= @employee.office %></h3>
+<h3>Dogs: <%= @employee.dog.name %></h3>
+
+<marquee 	scrolldelay=60 direction="right">
+  <img src="<%= @employee.img_url %>" alt="<%= @employee.alias %>">
+</marquee>
